@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="818.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="startButton" layoutX="14.0" layoutY="16.0" mnemonicParsing="false" onAction="#startButtonClicked" text="Start" />
+      <CheckBox fx:id="PBCcheckBox" layoutX="224.0" layoutY="20.0" mnemonicParsing="false" text="PBC" />
+      <ComboBox fx:id="structureComboBox" layoutX="373.0" layoutY="16.0" prefHeight="25.0" prefWidth="135.0" />
+      <Label fx:id="structureChoiceLabel" layoutX="289.0" layoutY="20.0" text="Structures: " />
+      <Label fx:id="heightLabel" layoutX="519.0" layoutY="20.0" text="Set height" />
+      <TextField fx:id="heightTextField" layoutX="589.0" layoutY="16.0" prefHeight="25.0" prefWidth="63.0" />
+      <TextField fx:id="widthTextField" layoutX="723.0" layoutY="16.0" prefHeight="25.0" prefWidth="63.0" />
+      <Label fx:id="widthLabel" layoutX="656.0" layoutY="20.0" text="Set width" />
+      <Label fx:id="iterationLabel" layoutX="795.0" layoutY="20.0" text="Set iterations" />
+      <TextField fx:id="iterationsTextField" layoutX="891.0" layoutY="16.0" prefHeight="25.0" prefWidth="109.0" />
+      <Canvas fx:id="canvas" height="720.0" layoutX="20.0" layoutY="60.0" width="960.0" />
+      <Button fx:id="stopButton" layoutX="78.0" layoutY="16.0" mnemonicParsing="false" onAction="#stopButtonClicked" text="Stop" />
+      <Button fx:id="resumeButton" layoutX="139.0" layoutY="16.0" mnemonicParsing="false" onAction="#resumeButtonClicked" text="Resume" />
+      <Button fx:id="resetButton" layoutX="479.0" layoutY="780.0" mnemonicParsing="false" onAction="#resetButtonClicked" text="Reset Board" />
+   </children>
+</Pane>
